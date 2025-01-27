@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LongSection from '../components/LongSection.astro';
+---
+
+<Layout title="Montaje PCCH375">
+  <LongSection
+    title=""
+    subtitle=""
+    color="white"
+    pt=""
+    textSize="text-[36px] xl:text-[40px]"
+  >
+    <article
+      slot="main"
+      id="thirdsection"
+      class="text-gray-200 flex flex-col items-center justify-center"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center justify-center md:justify-around py-5 md:py-0"
+      >
+        <div class="flex flex-col gap-2 xl:gap-4 max-w-4xl text-gray-200">
+          <h2
+            class="text-[28px] xl:text-[40px] font-bold tracking-widest underline underline-offset-8"
+          >
+            Fácil Montaje
+          </h2>
+          <p class="text-xl lg:text-2xl">
+            Empieza a disfrutar de tu PCCH375 rápidamente.
+          </p>
+        </div>
+
+        <video
+          controls
+          autoplay
+          loop
+          muted
+          src="/pcch375/montajepcch375.mp4"
+          class="hidden md:block rounded-2xl md:w-[90%] lg:w-[50%] object-center object-cover w-screen h-10/12"
+        ></video>
+
+        <video
+          controls
+          src="/pcch375/montajepcch375.mp4"
+          class="md:hidden rounded-3xl mb-4 py-2 h-[500px]"></video>
+      </div>
+    </article>
+
+    <!-- <div slot="footer" class="pb-10">
+    <a
+      class="border-[3px] backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white
+       hover:text-black transition-colors"
+      href="#buysection"
+    >
+      COMPRAR AHORA</a
+    >
+  </div> -->
+
+    <div
+      slot="background"
+      class="bg-gradient-to-t from-cyan-950 to-gray-950 object-center object-cover h-full w-full opacity-25"
+    >
+    </div>
+  </LongSection>
+</Layout>

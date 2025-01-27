@@ -1,0 +1,51 @@
+---
+import LongSection from './LongSection.astro';
+---
+
+<LongSection
+  title="VERSÁTIL Y CONFORTABLE"
+  subtitle="Diseñada especialmente para ser tu mejor compañera en tu día a día"
+  color="black"
+  pt="pt-5 xl:pt-10"
+  textSize="text-[36px] xl:text-[40px]"
+>
+  <article
+    slot="main"
+    class="text-gray-950 flex flex-col items-center justify-center"
+  >
+    <div
+      class="flex flex-col lg:flex-row justify-around gap-12 xl:gap-40 pt-10 pb-24 xl:pt-8 pb:4 lg:mb-24"
+    >
+      <img
+        src="/pcch375/pcch3752.webp"
+        alt="Foto lateral de la PCCH375"
+        class="w-[26rem] object-contain"
+      />
+      <img
+        src="/pcch375/pcch375.webp"
+        alt="Foto frontal de la PCCH375"
+        class="w-[32rem] object-contain"
+      />
+      <img
+        src="/pcch375/back375.webp"
+        alt="Foto frontal de la PCCH375"
+        class="w-[30rem] object-contain"
+      />
+    </div>
+  </article>
+
+  <!-- <div slot="footer" class="pb-10">
+    <a
+      class="border-[3px] border-black backdrop-blur-sm text-sm rounded font-bold text-black px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+      href="#buysection"
+    >
+      COMPRAR AHORA</a
+    >
+  </div> -->
+
+  <div
+    slot="background"
+    class="bg-gradient-to-b from-zinc-100 to-zinc-400 object-center object-cover h-full w-full"
+  >
+  </div>
+</LongSection>
