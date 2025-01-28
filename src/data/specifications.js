@@ -3,37 +3,37 @@ export const specsImgs = [
     id: 1,
     name: 'Reclinable hasta 135º',
     subtitle: '',
-    img: '/pcch375/1.webp',
+    img: '1.webp',
   },
   {
     id: 2,
     name: 'Brazos 2D',
     subtitle: '',
-    img: '/pcch375/4.webp',
+    img: '4.webp',
   },
   {
     id: 3,
     name: 'Material Textil',
     subtitle: '',
-    img: '/pcch375/2.webp',
+    img: '2.webp',
   },
   {
     id: 4,
     name: 'Cojín Lumbar',
     subtitle: '',
-    img: '/pcch375/8.webp',
+    img: '8.webp',
   },
   {
     id: 5,
     name: 'Color Gris',
     subtitle: '',
-    img: '/pcch375/circle.svg',
+    img: 'circle.svg',
   },
   {
     id: 6,
     name: 'Ruedas 50MM',
     subtitle: '',
-    img: '/pcch375/5.webp',
+    img: '5.webp',
   },
 ];
 

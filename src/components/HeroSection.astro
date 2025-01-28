@@ -1,39 +1,26 @@
 ---
-import Section from './Section.astro';
+import Section from "./Section.astro";
 ---
 
 <Section itemsPosition="items-start	justify-start">
   <article slot="main" class="text-gray-200 flex flex-col"></article>
 
-  <!-- <div slot="footer" class="pb-10 md:pb-10">
-    <div class="text-gray-200 pb-8">
-      <h1 class="text-2xl font-bold">PCCH-375</h1>
+  <div slot="footer" class="pb-10 md:pb-10">
+    <div class="text-gray-200 pb-8 text-center">
+      <h1 class="text-2xl font-bold text-center">PCCH 800 - TRGB</h1>
       <p class="md:hidden text-lg font-semibold">PVPR 149.99€</p>
     </div>
     <a
-      class="border-[3px] backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
-      href="#thirdsection"
+      class="ml-1 border-[3px] backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+      href="#buysection"
     >
-      VÍDEO MONTAJE</a
+      COMPRAR AHORA</a
     >
-  </div> -->
+  </div>
 
-  <video
+  <img
     slot="background"
-    src="/pcch375/pcch375.mp4"
-    loop
-    autoplay
-    muted
-    playsinline
-    class="hidden lg:flex object-center object-cover h-screen w-screen mt-0.5"
-  ></video>
-
-  <video
-    slot="background"
-    src="/pcch375/pcch375m.mp4"
-    loop
-    autoplay
-    muted
-    playsinline
-    class="lg:hidden object-center object-cover h-screen w-screen"></video>
+    src="pcch800trgbmain2.png"
+    class="flex object-center object-cover h-screen w-full"
+  />
 </Section>
