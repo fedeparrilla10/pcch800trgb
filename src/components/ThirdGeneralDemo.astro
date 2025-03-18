@@ -1,0 +1,93 @@
+---
+import LongSection from "./LongSection.astro";
+---
+
+<LongSection
+  title="AJUSTE PERSONALIZADO"
+  subtitle="Diseñada especialmente para ser tu mejor compañera en tu día a día"
+  color="white"
+  pt="pt-5 xl:pt-20"
+  textSize="text-[36px] xl:text-[40px]"
+>
+  <article slot="main" class="flex flex-col items-center justify-center">
+    <div
+      class="text-gray-100 flex flex-col lg:flex-row justify-around gap-10 xl:gap-24 py-10 px-5"
+    >
+      <div class="flex flex-col items-center gap-2">
+        <video
+          src="reposas.mp4"
+          class="rounded-2xl w-full max-w-lg md:max-w-md"
+          muted
+          loop
+          autoplay></video>
+        <div class="flex flex-col gap-2 w-3/4">
+          <p class="tracking-wide font-bold">BRAZOS 4D</p>
+          <p class="tracking-wide text-sm">
+            Para ajustarlos en altura, anchura y profundidad, para aumentar tu
+            comodidad
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <video
+          src="respaldo.mp4"
+          class="rounded-2xl w-full max-w-lg md:max-w-md"
+          muted
+          loop
+          autoplay></video>
+        <div class="flex flex-col gap-2 w-3/4">
+          <p class="tracking-wide font-bold">AJUSTE LUMBAR MECÁNICO</p>
+          <p class="tracking-wide text-sm">
+            Para adaptar el respaldo a tu espalda y obtener una posición más
+            ergonómica.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <video
+          src="lucessilla.mp4"
+          class="rounded-2xl w-full max-w-lg md:max-w-md"
+          muted
+          loop
+          autoplay></video>
+        <div class="flex flex-col gap-2 w-3/4">
+          <p class="tracking-wide font-bold">PERSONALIZA LA LUZ</p>
+          <p class="tracking-wide text-sm">Pequeña descripción.</p>
+        </div>
+      </div>
+      <!-- {
+        generalDemoData.map((product) => (
+          <div class="flex flex-col items-center gap-2">
+            <video
+              src={product.video}
+              loop
+              autoplay
+              muted
+              playsinline
+              class="rounded-2xl w-full max-w-lg xl:max-w-2xl"
+            />
+            <div class="flex flex-col gap-2 w-3/4">
+              <p class="tracking-wide font-bold">{product.title}</p>
+              <p class="tracking-wide text-sm">{product.description}</p>
+            </div>
+          </div>
+        ))
+      } -->
+    </div>
+  </article>
+
+  <div slot="footer" class="pb-10">
+    <a
+      class="border-[3px] backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+      href="#buysection"
+    >
+      COMPRAR AHORA</a
+    >
+  </div>
+
+  <div
+    slot="background"
+    class="bg-gradient-to-r from-zinc-950 to-zinc-900 object-center object-cover h-full w-full"
+  >
+  </div>
+</LongSection>

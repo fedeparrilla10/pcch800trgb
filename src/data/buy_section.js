@@ -5,7 +5,7 @@ export const buySectionData = {
 
 export const productData = [
   {
-    imgSrc: "frontal.png",
+    imgSrc: "t1.png",
     title: "PCCH-800 TRGB",
     // buySectionStores: [
     //   {
@@ -39,6 +39,11 @@ export const productData = [
     //     link: 'https://www.conforama.es/silla-de-gaming-nacon-pro-gris',
     //   },
     // ],
+    class: "w-14 h-14",
+  },
+  {
+    imgSrc: "p12.png",
+    title: "PCCH-700 PRGB",
     class: "w-14 h-14",
   },
 ];

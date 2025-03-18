@@ -1,0 +1,66 @@
+---
+import LongSection from "./LongSection.astro";
+---
+
+<LongSection
+  title="PCCH800TRGB"
+  subtitle="Descripción"
+  color="black"
+  pt="pt-10"
+  textSize="text-[40px]"
+>
+  <article
+    slot="main"
+    class="text-black grid grid-cols-1 lg:grid-cols-3 gap-2 w-screen px-4"
+  >
+    <!-- Columna central (imagen principal) -->
+    <div class="flex items-center justify-center">
+      <img
+        src="t6.png"
+        alt="Imagen principal"
+        class="object-contain max-w-sm md:max-w-xl rounded-lg transition-brightness duration-300 hover:brightness-75"
+      />
+    </div>
+    <!-- Columna izquierda -->
+    <div class="flex flex-col gap-2 items-center">
+      <img
+        src="t1.png"
+        alt="Imagen 1"
+        class="object-contain max-w-[22rem] rounded-lg transition-brightness duration-300 hover:brightness-75"
+      />
+      <img
+        src="t2.png"
+        alt="Imagen 2"
+        class="object-contain max-w-[22rem] rounded-lg transition-brightness duration-300 hover:brightness-75"
+      />
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="flex flex-col gap-2 items-center">
+      <img
+        src="t4.png"
+        alt="Imagen 3"
+        class="object-contain max-w-[22rem] rounded-lg transition-brightness duration-300 hover:brightness-75"
+      />
+      <img
+        src="t3.png"
+        alt="Imagen 4"
+        class="object-contain max-w-[22rem] rounded-lg transition-brightness duration-300 hover:brightness-75"
+      />
+    </div>
+  </article>
+
+  <div slot="footer" class="pb-10">
+    <a
+      class="border-[3px] border-black backdrop-blur-sm text-sm rounded font-bold text-black px-12 py-2 inline-block hover:bg-black hover:text-white transition-colors"
+      href="#buysection"
+    >
+      COMPRAR AHORA
+    </a>
+  </div>
+
+  <img
+    slot="background"
+    class="bg-gradient-to-b from-zinc-100 to-zinc-300 object-center object-cover h-full w-full"
+  />
+</LongSection>
